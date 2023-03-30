@@ -29,9 +29,14 @@ const Products = () => {
 
 
   return(
-    <div className="products">
+    <div className='products'>
       <h1 className='products__title'>Products Information</h1>
-      <button onClick={() => { navigate('/register') }}>New Product</button>
+      <table className='products__table'>
+        <th className='products__tableHead--name'>Product</th>
+        <th className='products__tableHead--active'>Active</th>
+        <th className='products__tableHead--used'>Used</th>
+        <th className='products__tableHead'>Options</th>
+      </table>
         {
           products.map((product: productState) => (
             <UpdateProduct
@@ -43,6 +48,7 @@ const Products = () => {
             />
           ))
         }
+      <button className='products__register' onClick={() => { navigate('/register') }}>Add a New Product</button>
     </div>
   )
 }

@@ -1,9 +1,24 @@
 .products {
   margin: 4em;
+  padding: 2em;
 }
 
 .products__title {
   margin-bottom: 1em;
+}
+
+.products__register {
+  border: 0;
+  border-radius: 5px;
+  background-color:rgb(103, 141, 115);
+  color: white;
+  font-weight: 800;
+  padding: 0.5em;
+  margin-top: 2em;
+}
+
+.products__register:hover {
+  background-color: darkcyan;
 }
 
 .products__button {
@@ -15,6 +30,45 @@
   padding: 0.5em;
 }
 
-.products__button:hover {
+.products__button:hover, .products__button--edit:hover, .products__button--cancel:hover {
   background-color:rgb(72, 137, 203);
+}
+
+.products__table {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgb(72, 137, 203);
+  border-radius: 5px 5px 0 0;
+  padding: 0.5em 1em 0.5em 0;
+}
+
+.products__button--edit {
+  border: 0;
+  border-radius: 5px 0 0 5px;
+  background-color:lightskyblue;
+  color: white;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.products__button--cancel {
+  border: 0;
+  border-radius: 0 5px 5px 0;
+  background-color:lightskyblue;
+  color: white;
+  font-weight: 600;
+  padding: 0.5em;
+}
+
+.products__tableHead--name {
+  width: 75px;
+  margin-right: 2.5em;
+}
+
+.products__tableHead--active {
+  margin-right: 2.5em;
+}
+
+.products__tableHead--used {
+  margin-right: 2em;
 }

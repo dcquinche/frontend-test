@@ -1,0 +1,30 @@
+.product__table {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid rgb(72, 137, 203);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.product__form {
+  border: 3px solid rgb(72, 137, 203);
+  padding: 0.5em 0 0.5em 0;
+}
+
+.product__tableBody--name {
+  width: 75px;
+  margin-right: 6em;
+}
+
+.product__tableBody--active {
+  margin-right: 7em;
+}
+
+.product__tableBody--used {
+  margin-right: 4em;
+}
+
+.product__tableBody--options {
+  display: flex;
+  gap: 5px;
+}
