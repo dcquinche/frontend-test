@@ -1,0 +1,20 @@
+.product {
+  margin: 4em;
+  padding: 2em;
+  border-radius: 5px;
+  border: 15px solid rgb(72, 137, 203);
+}
+
+.product__button {
+  border: 0;
+  border-radius: 5px;
+  background-color:rgb(72, 137, 203);
+  color: white;
+  font-weight: 800;
+  padding: 1em;
+  margin-top: 0.5em;
+}
+
+.product__button:hover {
+  background-color:lightskyblue;
+}
